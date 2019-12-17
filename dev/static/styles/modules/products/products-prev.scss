@@ -1,0 +1,30 @@
+.product {
+  &__prev {
+  }
+}
+
+.js-product-slider {
+  position: relative;
+
+}
+
+.product-prev__number {
+  background-color: $white;
+  color: $bg-button-yellow;
+  font-size: 30px;
+  line-height: 45px;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  &::before {
+    background-color: $bg-color-lightBlue;
+    content: "";
+    height: 345px;
+    opacity: 0.2;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    width: 26%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,40 @@
+.s-header {
+  position: relative;
+  &::before {
+    background-color: $bg-color-lightBlue;
+    content: "";
+    height: 420px;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  padding-top: 20px;
+  &__logo {
+    height: 39px;
+    width: 42px;
+  }
+}
+.language {
+  display: flex;
+  font-family: $second-font;
+  &__text {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 24px;
+    padding: 0;
+    text-transform: uppercase;
+    &:first-child { margin-right: 30px; }
+  }
+  &--current {
+    border-bottom: 2px solid $bg-button-yellow;
+  }
+}

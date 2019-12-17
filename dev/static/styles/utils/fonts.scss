@@ -1,19 +1,15 @@
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Bold.woff') format('woff'),
-  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans Regular';
-  src: url('../fonts/OpenSans-Regular.eot');
-  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+  url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
