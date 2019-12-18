@@ -3,17 +3,48 @@
     font-size: 18px;
     line-height: 32.4px;
     padding: 40px;
+    @media screen and (min-width: $tablet-size) {
+        font-size: 20px;
+        line-height: 36px;
+        padding: 80px 122px 153px;
+    }
     &__name {
         font-family: $second-font;
         font-size: 24px;
         font-weight: 600;
         line-height: 36px;
         margin-bottom: 24px;
+        @media screen and (min-width: $tablet-size) {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
     }
-    &__phone{ margin-bottom: 24px; }
-    &__email { margin-bottom: 24px; }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $tablet-size) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    &__phone{
+        margin-bottom: 24px;
+        @media screen and (min-width: $tablet-size) {
+            flex-basis: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    &__email {
+        margin-bottom: 24px;
+        @media screen and (min-width: $tablet-size) {
+            flex-basis: 50%;
+            margin-bottom: 30px;
+        }
+    }
     &__link { 
         color: $link-color;
+        display: block;
         text-decoration: underline;
     }
 }

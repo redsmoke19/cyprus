@@ -10,6 +10,12 @@
     top: 0;
     width: 50%;
   }
+  @media screen and (min-width: $tablet-size) {
+    .container { padding: 0 30px; }
+    &::before {
+      width: 36%;
+    }
+  }
 }
 .header {
   align-items: center;
@@ -17,6 +23,9 @@
   justify-content: space-between;
   margin-bottom: 29px;
   padding-top: 20px;
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 40px;
+  }
   &__logo {
     height: 39px;
     width: 42px;

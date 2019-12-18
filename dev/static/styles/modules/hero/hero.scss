@@ -6,24 +6,46 @@
   @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url('../images/content/header_bg-mobile2x.jpg');
   }
+  @media screen and (min-width: $tablet-size) {
+    background-image: url("../images/content/header_bg-tablet1x.jpg");
+    background-size: 60% auto;
+    .container { padding: 0 122px; }
+    @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('../images/content/header_bg-tablet2x.jpg');
+    }
+  }
 }
 .hero {
   margin-bottom: 114px;
   padding-top: 25px;
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 23px;
+  }
   &__title {
     font-family: $second-font;
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
     margin-bottom: 44px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 48px;
+      line-height: 72px;
+      margin-bottom: 69px;
+    }
   }
   &__description {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 68px;
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 52px;
+    }
   }
   &__button {
     background-color: $bg-button-yellow;
     color: $white;
+    @media screen and (min-width: $tablet-size) {
+      width: 46.3%;
+    }
   }
 }
