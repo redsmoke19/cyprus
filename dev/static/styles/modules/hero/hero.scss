@@ -1,7 +1,7 @@
 .s-hero {
   background-image: url("../images/content/header_bg-mobile1x.jpg");
   background-position: right top;
-  background-size: 259px 231px;
+  background-size: 69% auto;
   background-repeat: no-repeat;
   @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url('../images/content/header_bg-mobile2x.jpg');
@@ -23,16 +23,7 @@
     margin-bottom: 68px;
   }
   &__button {
-    align-items: center;
     background-color: $bg-button-yellow;
-    border: none;
     color: $white;
-    display: flex;
-    font-family: $second-font;
-    justify-content: center;
-    letter-spacing: 1.4px;
-    height: 48px;
-    text-transform: uppercase;
-    width: 100%;
   }
 }

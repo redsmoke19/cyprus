@@ -1,0 +1,19 @@
+.footer {
+    background-color: $bg-footer-color;
+    font-size: 18px;
+    line-height: 32.4px;
+    padding: 40px;
+    &__name {
+        font-family: $second-font;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    &__phone{ margin-bottom: 24px; }
+    &__email { margin-bottom: 24px; }
+    &__link { 
+        color: $link-color;
+        text-decoration: underline;
+    }
+}
