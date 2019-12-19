@@ -14,12 +14,23 @@
       background-image: url('../images/content/header_bg-tablet2x.jpg');
     }
   }
+  @media screen and (min-width: $desktop-size) {
+    background-image: url("../images/content/header_bg-desktop1x.jpg");
+    background-position: 66% top;
+    background-size: 790px 605px;
+    .container { padding: 0 223px; }
+  }
 }
 .hero {
   margin-bottom: 114px;
   padding-top: 25px;
   @media screen and (min-width: $tablet-size) {
     padding-top: 23px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    margin-bottom: 168px;
+    padding-bottom: 77px;
+    padding-top: 64px;
   }
   &__title {
     font-family: $second-font;
@@ -32,6 +43,10 @@
       line-height: 72px;
       margin-bottom: 69px;
     }
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 32px;
+      width: 79.7%;
+    }
   }
   &__description {
     font-size: 18px;
@@ -40,12 +55,19 @@
     @media screen and (min-width: $tablet-size) {
       margin-bottom: 52px;
     }
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 40px;
+      width: 45.5%;
+    }
   }
   &__button {
     background-color: $bg-button-yellow;
     color: $white;
     @media screen and (min-width: $tablet-size) {
       width: 46.3%;
+    }
+    @media screen and (min-width: $desktop-size) {
+      width: 24.4%;
     }
   }
 }

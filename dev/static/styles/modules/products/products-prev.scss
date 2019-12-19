@@ -2,15 +2,20 @@
   margin-bottom: 50px;
   position: relative;
   @media screen and (min-width: $tablet-size) {
-    .container {
-      padding: 0 122px;
-    }
+    .container { padding: 0 122px; }
     margin-bottom: 64px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    .container { padding: 0 223px; }
+    margin-bottom: 110px;
   }
   &:not(:last-child) {
     margin-bottom: 120px;
     @media screen and (min-width: $tablet-size) {
       margin-bottom: 114px;
+    }
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 280px;
     }
   }
   &::before {
@@ -27,6 +32,11 @@
       top: -50px;
       width: 72.1%;
     }
+    @media screen and (min-width: $desktop-size) {
+      height: 532px;
+      top: -80px;
+      width: 41.9%;
+    }
   }
   &--left {
     &::before { left: 0; }
@@ -34,11 +44,25 @@
   &--right {
     &::before { right: 0; }
   }
+  &__row {
+    @media screen and (min-width: $desktop-size) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   &__top {
     margin-bottom: 40px;
     position: relative;
     @media screen and (min-width: $tablet-size) {
       margin-bottom: 54px;
+    }
+    @media screen and (min-width: $desktop-size) {
+      flex-shrink: 0;
+      margin-bottom: 0;
+      width: 48.5%;
+      &--right {
+        order: 2;
+      }
     }
   }
   &__picture { width: 100%; }
@@ -89,17 +113,24 @@
     align-items: center;
     background-color: $bg-button-blue;
     border: none;
+    cursor: pointer;
     display: flex;
     flex-grow: 1;
+    flex-shrink: 0;
     justify-content: center;
     padding: 0;
     width: 28%;
     height: 48px;
     &:first-child { margin-right: 19px; }
     @media screen and (min-width: $tablet-size) {
-      width: 9.1%;
+      width: 9.163%;
       flex-grow: 0;
       &:first-child { margin-right: 12px; }
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: $desktop-size) {
+      width: 45.5%;
     }
   }
   &__title {
@@ -126,7 +157,7 @@
     }
   }
   &__description {
-    line-height: 180%;
+    line-height: 25.2px;
     margin-bottom: 24px;
     a {
       color: $link-color;
@@ -183,4 +214,11 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: $desktop-size) {
+  .js-product-slider.is-fullscreen .slider-prev {
+    // display: block;
+    // padding: 0 100px;
+  }
 }

@@ -1,42 +1,44 @@
 .product-prev.product-prev--right
     .container
-        .product-prev__top
-            .js-product-slider
-                .slider-prev
-                    picture.product-prev__picture
-                        //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
-                        //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
-                        //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
-                        //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
-                        source(media="(min-width: 768px)" srcset="static/images/content/product-prev-2-tabletx1.jpg 1x, /static/images/content/product-prev-2-tabletx2.jpg 2x")
-                        img.product-prev__img(src="static/images/content/product-prev-2x1.jpg" srcset="static/images/content/product-prev-2x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
-                .slider-prev
-                    picture.product-prev__picture
-                        //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
-                        //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
-                        //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
-                        //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
-                        source(media="(min-width: 768px)" srcset="static/images/content/product-prev-1-tabletx1.jpg 1x, /static/images/content/product-prev-1-tabletx2.jpg 2x")
-                        img.product-prev__img(src="static/images/content/product-prev-1x1.jpg" srcset="static/images/content/product-prev-1x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
-            .product-prev__nav
-                .product-prev__number.product-prev__number--last 2
-                .product-prev__inner.product-prev__inner--right
-                    button.product-prev__button.product-prev__button--prev
-                        span.visually-hidden Предыдущий слайд
-                        +icon('icon-arrow', 'icon__arrow icon__arrow--prev','10', '20')
-                    button.product-prev__button.product-prev__button--next
-                        span.visually-hidden Следующий слайд
-                        +icon('icon-arrow', 'icon__arrow icon__arrow--next','10', '20')
-        .product-prev__body
-            h2.product-prev__title Апартаменты в комплексе Nereids apt. G23 «Лимассол Марина»
-            p.product-prev__cost €1,250,000
-                span 118 м²
-            p.product-prev__description Limassol Marina (<a href="http://www.limassolmarina.ru">www.limassolmarina.ru</a>) – это эксклюзивный прибрежный проект, в историческом центре города Лимассол, разработанный группой всемирно известных архитекторов и инженеров. Сочетая в себе элегантные жилые резиденции, яхтенную гавань с полным спектром услуг и заманчивый выбор ресторанов и бутиков, он стал основой нового уникального стиля жизни – «Жизнь на море». На Кипре до сих пор не построено аналогов проекта Limassol Marina. 
-            p.product-prev__description Элитные жилые резиденции курорта Limassol Marina воплощают в себе все преимущества стиля жизни на море. Эта выдающаяся коллекция стильных домов является восхитительным оазисом роскоши и комфорта, который находится в пределах пешей доступности от исторического центра Лимассола. Комплекс Nereids Residences представляет  собой единственный в Limassol Marina закрытый комплекс элитных апартаментов, расположенных в девяти прекрасно спроектированных зданиях. Ландшафтные зоны общего пользования включают в себя сады и два бассейна, предназначенные для эксклюзивного пользования жителями Nereids Residences. 
-            p.product-prev__description Апартаменты G23 находятся на  втором этаже блока G. Общая площадь апартаментов – 118 м2, имеется большая крытая терраса (23м2). 2 спальни, 2 санузла, в цену апартаментов включено отдельное место в подземном паркинге комплекса и кладовая комната на -1-м этаже. Апартаменты полностью подходят для участия в паспортной программе Кипра.
-            p.product-prev__description Апартаменты продаются полностью меблированными и готовыми принять жильцов.
-            p.product-prev__description Для потенциальных инвесторов, рассчитывающих на получение постоянного дохода от аренды, данные апартаменты сданы в аренду на долгий срок по ставке 2800 EUR в месяц.
-        .product-prev__footer
-            a.product-prev__link.button(href="") Описание
-            button.product-prev__call.button Позвонить
-            span.product-prev__name – Алексей
+        .product-prev__row
+            .product-prev__top.product-prev__top--right
+                .js-product-slider
+                    .slider-prev
+                        picture.product-prev__picture
+                            //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
+                            //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
+                            //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
+                            //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
+                            source(media="(min-width: 768px)" srcset="static/images/content/product-prev-2-tabletx1.jpg 1x, /static/images/content/product-prev-2-tabletx2.jpg 2x")
+                            img.product-prev__img(src="static/images/content/product-prev-2x1.jpg" srcset="static/images/content/product-prev-2x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
+                    .slider-prev
+                        picture.product-prev__picture
+                            //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
+                            //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
+                            //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
+                            //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
+                            source(media="(min-width: 768px)" srcset="static/images/content/product-prev-1-tabletx1.jpg 1x, /static/images/content/product-prev-1-tabletx2.jpg 2x")
+                            img.product-prev__img(src="static/images/content/product-prev-1x1.jpg" srcset="static/images/content/product-prev-1x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
+                .product-prev__nav
+                    .product-prev__number.product-prev__number--last 2
+                    .product-prev__inner.product-prev__inner--right
+                        button.product-prev__button.product-prev__button--prev
+                            span.visually-hidden Предыдущий слайд
+                            +icon('icon-arrow', 'icon__arrow icon__arrow--prev','10', '20')
+                        button.product-prev__button.product-prev__button--next
+                            span.visually-hidden Следующий слайд
+                            +icon('icon-arrow', 'icon__arrow icon__arrow--next','10', '20')
+            .product-prev__wrapper
+                .product-prev__body
+                    h2.product-prev__title Апартаменты в комплексе Nereids apt. G23 «Лимассол Марина»
+                    p.product-prev__cost €1,250,000
+                        span 118 м²
+                    p.product-prev__description Limassol Marina (<a href="http://www.limassolmarina.ru">www.limassolmarina.ru</a>) – это эксклюзивный прибрежный проект, в историческом центре города Лимассол, разработанный группой всемирно известных архитекторов и инженеров. Сочетая в себе элегантные жилые резиденции, яхтенную гавань с полным спектром услуг и заманчивый выбор ресторанов и бутиков, он стал основой нового уникального стиля жизни – «Жизнь на море». На Кипре до сих пор не построено аналогов проекта Limassol Marina. 
+                    p.product-prev__description Элитные жилые резиденции курорта Limassol Marina воплощают в себе все преимущества стиля жизни на море. Эта выдающаяся коллекция стильных домов является восхитительным оазисом роскоши и комфорта, который находится в пределах пешей доступности от исторического центра Лимассола. Комплекс Nereids Residences представляет  собой единственный в Limassol Marina закрытый комплекс элитных апартаментов, расположенных в девяти прекрасно спроектированных зданиях. Ландшафтные зоны общего пользования включают в себя сады и два бассейна, предназначенные для эксклюзивного пользования жителями Nereids Residences. 
+                    p.product-prev__description Апартаменты G23 находятся на  втором этаже блока G. Общая площадь апартаментов – 118 м2, имеется большая крытая терраса (23м2). 2 спальни, 2 санузла, в цену апартаментов включено отдельное место в подземном паркинге комплекса и кладовая комната на -1-м этаже. Апартаменты полностью подходят для участия в паспортной программе Кипра.
+                    p.product-prev__description Апартаменты продаются полностью меблированными и готовыми принять жильцов.
+                    p.product-prev__description Для потенциальных инвесторов, рассчитывающих на получение постоянного дохода от аренды, данные апартаменты сданы в аренду на долгий срок по ставке 2800 EUR в месяц.
+                .product-prev__footer
+                    a.product-prev__link.button(href="") Описание
+                    button.product-prev__call.button Позвонить
+                    span.product-prev__name – Алексей

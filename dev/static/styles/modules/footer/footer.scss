@@ -8,6 +8,9 @@
         line-height: 36px;
         padding: 80px 122px 153px;
     }
+    @media screen and (min-width: $desktop-size) {
+        padding: 80px 223px 70px;
+    }
     &__name {
         font-family: $second-font;
         font-size: 24px;
@@ -27,12 +30,19 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+        @media screen and (min-width: $desktop-size) {
+            justify-content: space-between;
+        }
     }
     &__phone{
         margin-bottom: 24px;
         @media screen and (min-width: $tablet-size) {
             flex-basis: 50%;
             margin-bottom: 30px;
+        }
+        @media screen and (min-width: $desktop-size) {
+            flex-basis: 33%;
+            margin-bottom: 0;
         }
     }
     &__email {
@@ -41,10 +51,19 @@
             flex-basis: 50%;
             margin-bottom: 30px;
         }
+        @media screen and (min-width: $desktop-size) {
+            flex-basis: 33%;
+            margin-bottom: 0;
+        }
     }
     &__link { 
         color: $link-color;
         display: block;
         text-decoration: underline;
+    }
+    &__year {
+        @media screen and (min-width: $desktop-size) {
+            align-self: flex-end;
+        }
     }
 }

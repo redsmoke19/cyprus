@@ -1,38 +1,40 @@
 .product-prev.product-prev--left
     .container
-        .product-prev__top
-            .js-product-slider
-                .slider-prev
-                    picture.product-prev__picture
-                        //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
-                        //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
-                        //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
-                        //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
-                        source(media="(min-width: 768px)" srcset="static/images/content/product-prev-3-tabletx1.jpg 1x, /static/images/content/product-prev-3-tabletx2.jpg 2x")
-                        img.product-prev__img(src="static/images/content/product-prev-3x1.jpg" srcset="static/images/content/product-prev-3x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
-                .slider-prev
-                    picture.product-prev__picture
-                        //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
-                        //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
-                        //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
-                        //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
-                        source(media="(min-width: 768px)" srcset="static/images/content/product-prev-4-tabletx1.jpg 1x, /static/images/content/product-prev-4-tabletx2.jpg 2x")
-                        img.product-prev__img(src="static/images/content/product-prev-4x1.jpg" srcset="static/images/content/product-prev-4x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
-            .product-prev__nav
-                .product-prev__number 3
-                .product-prev__inner
-                    button.product-prev__button.product-prev__button--prev
-                        span.visually-hidden Предыдущий слайд
-                        +icon('icon-arrow', 'icon__arrow icon__arrow--prev','10', '20')
-                    button.product-prev__button.product-prev__button--next
-                        span.visually-hidden Следующий слайд
-                        +icon('icon-arrow', 'icon__arrow icon__arrow--next','10', '20')
-        .product-prev__body
-            h2.product-prev__title Апартаменты в комплексе Nereids apt. B11 «Лимассол Марина»
-            p.product-prev__cost €950,000
-                span 131 м²
-            p.product-prev__description Limassol Marina (<a href="http://www.limassolmarina.ru">www.limassolmarina.ru</a>) – это эксклюзивный прибрежный проект, в историческом центре города Лимассол, разработанный группой всемирно известных архитекторов и инженеров.
-        .product-prev__footer
-            a.product-prev__link.button(href="") Описание
-            button.product-prev__call.button Позвонить
-            span.product-prev__name – Алексей
+        .product-prev__row
+            .product-prev__top
+                .js-product-slider
+                    .slider-prev
+                        picture.product-prev__picture
+                            //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
+                            //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
+                            //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
+                            //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
+                            source(media="(min-width: 768px)" srcset="static/images/content/product-prev-3-tabletx1.jpg 1x, /static/images/content/product-prev-3-tabletx2.jpg 2x")
+                            img.product-prev__img(src="static/images/content/product-prev-3x1.jpg" srcset="static/images/content/product-prev-3x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
+                    .slider-prev
+                        picture.product-prev__picture
+                            //source(type="image/webp" media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.webp, /static/images/content/index-can-desktop2x.webp 2x")
+                            //source(type="image/webp" media="(min-width: 768px)" srcset="/static/images/content/index-can-tablet1x.webp, /static/images/content/index-can-tablet2x.webp 2x")
+                            //source(type="image/webp" srcset="/static/images/content/index-can-mobile1x.webp, /static/images/content/index-can-mobile2x.webp 2x")
+                            //source(media="(min-width: 1300px)" srcset="/static/images/content/index-can-desktop1x.png 1x, /static/images/content/index-can-desktop2x.png 2x")
+                            source(media="(min-width: 768px)" srcset="static/images/content/product-prev-4-tabletx1.jpg 1x, /static/images/content/product-prev-4-tabletx2.jpg 2x")
+                            img.product-prev__img(src="static/images/content/product-prev-4x1.jpg" srcset="static/images/content/product-prev-4x2.jpg 2x" width="315" height="235" alt="Nereids apt. B11 «Лимассол Марина»")
+                .product-prev__nav
+                    .product-prev__number 3
+                    .product-prev__inner
+                        button.product-prev__button.product-prev__button--prev
+                            span.visually-hidden Предыдущий слайд
+                            +icon('icon-arrow', 'icon__arrow icon__arrow--prev','10', '20')
+                        button.product-prev__button.product-prev__button--next
+                            span.visually-hidden Следующий слайд
+                            +icon('icon-arrow', 'icon__arrow icon__arrow--next','10', '20')
+            .product-prev__wrapper
+                .product-prev__body
+                    h2.product-prev__title Апартаменты в комплексе Nereids apt. B11 «Лимассол Марина»
+                    p.product-prev__cost €950,000
+                        span 131 м²
+                    p.product-prev__description Limassol Marina (<a href="http://www.limassolmarina.ru">www.limassolmarina.ru</a>) – это эксклюзивный прибрежный проект, в историческом центре города Лимассол, разработанный группой всемирно известных архитекторов и инженеров.
+                .product-prev__footer
+                    a.product-prev__link.button(href="") Описание
+                    button.product-prev__call.button Позвонить
+                    span.product-prev__name – Алексей
